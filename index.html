@@ -1,0 +1,87 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body id="bgc">
+	<title>小杨同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="小杨同学">
+    <meta name="github" content="https://github.com/adminlove520">
+    <meta name="describe" content="七待是你，夕望是你~ ">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<div class="mb-box">
+		<div class="bb">
+
+			<h2 style="text-align: center;">想和你今年、明年、年年</h2>
+			<div class="bb_text">
+				<div id="code">
+					宝贝：
+					我不想说从第一次见你就喜欢你这么俗气的话，尽管这是事实
+					我不想说想照顾你与你度过余生这么虚假的话，尽管这是事实
+					我不想说我真诚地爱着你胜过我自己这么自大的话，尽管这也是事实
+					我只是想在此时此刻告诉你
+					我不嫉妒你爱的人
+					我不奢求不会发生的结果
+					我不拒绝你的任何一个请求
+					我甚至不想告诉你我爱你
+					如果我不能成为让你欢笑的那个人
+					我不愿成为炙烤的烈日
+					不愿成为夏天的暴雨
+					我只愿成为一阵穿堂而过的最温柔的风
+					我不想做骄傲昂贵的金骏眉
+					我也不想成为凉爽透顶的雪碧
+					我只愿成为静静等待你的那杯温热的白水
+					你站在桥上看风景
+					看风景人在楼上看你
+					我不愿成为那风景
+					也不愿成为那人
+					我只愿成为支撑起你的那座桥~
+					---❤❤❤❤---
+					今天就是七夕了，遇到你的感觉大概就是走了很久的路终于到家了。今年七夕我有两个愿望:你在身边，在你身边，七待是你，夕望是你。我一点都不遗憾没有在最好的时光遇到你，因为我发现遇见你之后最好的时光才开始，真爱之路从不平坦，爱迎万难，爱也赢万难，想和你今年、明年、年年...
+				</div>
+			</div>
+			<p class="bb_myname">
+				张张<br>
+			</p>
+
+		</div>
+	</div>
+
+	<script>
+		Element.prototype.typewriter = function (a) {
+			var d = this,
+				c = d.innerHTML,
+				b = 0;
+			d.innerHTML = "";
+			var e = setInterval(function () {
+				var f = c.substr(b, 1);
+				if (f == "<") {
+					b = c.indexOf(">", b) + 1
+				} else {
+					b++
+				}
+				d.innerHTML = c.substring(0, b) + (b & 1 ? "_" : "");
+				if (b >= c.length) {
+					clearInterval(e)
+				}
+			}, 150)
+			return this
+
+		}
+		document.getElementById("code").typewriter();
+	</script>
+	<audio id="main_audio" autoplay="autoplay" preload="auto" loop="">
+		<source src="music.mp3" >
+	</audio>
+	<script type="text/javascript" src="js/count.js"></script>
+
+
+	<script type="text/javascript" async="" src="js/su.js"></script>
+
+</body>
+
+</html>
