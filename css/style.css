@@ -13,3 +13,52 @@ body{background-color: #f4f4f4; margin: 0; font-family:'Î¢ÈíÑÅºÚ','ËÎ�
 .musicbg:hover{filter: alpha(opacity=90); opacity: .9}
 .banquan{width: 100%; text-align: center; color: #888; position: fixed; bottom: 30px; font-size:14px;}
 .banquan a{color: #888; text-decoration: none;}
+/* 两只XHJ一样的猪 */
+.xhjIsPig .pig1,
+.pig2 {
+    position: fixed;
+    z-index: 99;
+    width: 150px;
+}
+
+.xhjIsPig .pig1 {
+    right: -10px;
+    bottom: 0;
+    transform: rotate(-25deg);
+    animation: xhjPigRun1 2s infinite;
+}
+
+.xhjIsPig .pig2 {
+    left: -10px;
+    bottom: 0;
+    transform: rotate(-25deg);
+    animation: xhjPigRun2 2s infinite;
+}
+
+@keyframes xhjPigRun1 {
+    0% {
+        transform: scale(1) rotate(-25deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(-25deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-25deg);
+    }
+}
+
+@keyframes xhjPigRun2 {
+    0% {
+        transform: scale(1) rotate(-25deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(-25deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-25deg);
+    }
+}
